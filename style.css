@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  height: 13vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo_container img {
+  width: 60px;
+  margin-left: 20px;
+}
+
+.nav_bar {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  margin-right: 120px;
+}
+
+.nav_bar h5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(54, 54, 54);
+  cursor: pointer;
+}
+
+.nav_bar span {
+  color: rgba(224, 10, 10, 0.808);
+  position: absolute;
+  right: -27px;
+  top: -5px;
+  font-size: 0.9rem;
+}
+
+.search_bar {
+  display: flex;
+  width: 360px;
+  background-color: rgb(240, 248, 248);
+  height: 40px;
+  border-radius: 5px;
+  align-items: center;
+  gap: 20px;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+.search_bar button {
+  background: transparent;
+  width: 250px;
+  border: 0px solid white;
+  color: rgb(155, 153, 153);
+}
+
+.search_bar i {
+  font-size: 0.9rem;
+  color: rgb(138, 136, 136);
+}
+
+.action_bar {
+  display: flex;
+  gap: 30px;
+}
+
+.watchlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5px;
+}
+
+.watchlist p {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.watchlist i {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.bag-icon {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.item-numbers {
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  top: -5px;
+  left: 10px;
+  padding: 1px 5px;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+/* main section starts here ............................................... */
+
+main {
+  min-height: 100vh;
+  margin-top: 15vh;
+}
+
+#main img {
+  width: 100%;
+}
+
+#items-container {
+  min-height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 120px;
+  width: 100%;
+  column-gap: 30px;
+  row-gap: 20px
+}
+
+.item-container {
+  min-height: 470px;
+  width: 250px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+}
+
+.rating {
+  background-color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 295px;
+  padding: 0 10px 3px 10px;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.company {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.name {
+  font-size: 0.9rem;
+  color: rgb(42, 43, 43);
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.current-price {
+  font-weight: 600;
+}
+
+.original-price {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: rgb(105, 104, 104);
+}
+
+.off-price {
+  color: rgb(228, 2, 2);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.add-to-bag {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(12, 250, 71);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* footer section starts here ..................................... */
+
+footer {
+  min-height: 40vh;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+#foot1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+#foot1 h4 {
+  margin-bottom: 25px;
+  color: rgb(78, 78, 78);
+  font-size: 0.91rem;
+}
+
+#foot1 p {
+  font-size: 0.92rem;
+  color: rgb(102, 102, 102);
+}
+
+.copyright {
+  height: 9vh;
+  background-color: rgb(255, 252, 252);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copyright p {
+  font-size: 0.95rem;
+  color: rgb(134, 134, 134);
+  margin-right: 15px;
+}
